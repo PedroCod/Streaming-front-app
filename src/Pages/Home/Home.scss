@@ -1,0 +1,16 @@
+*{
+  
+}
+
+.home{
+  &__title h1{
+    display: flex;
+    justify-content: center;
+  }
+
+  &__cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

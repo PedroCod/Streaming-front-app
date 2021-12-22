@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.caduser {
+  background: linear-gradient(
+    90deg,
+    rgba(164, 38, 119, 1) 0%,
+    rgba(201, 104, 0, 1) 100%
+  );
+}
+.caduser h1{
+  display: flex;
+  justify-content: center;
+}
+.cardcad {
+  background: linear-gradient(
+    90deg,
+    rgba(36, 0, 4, 1) 0%,
+    rgba(0, 0, 0, 1) 54%,
+    rgba(101, 0, 0, 1) 100%
+  );
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 3.5rem 25rem 25rem 25rem;
+  box-shadow: 0 0 2rem #ffffff;
+  border-radius: 1rem;
+  border: 1px solid white;
+
+  &__Form {
+    width: 100%;
+    padding: 1rem;
+    color: #ffffff;
+  }
+
+  &__Form_item {
+    position: relative;
+    padding-top: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  &__Form__item input {
+    width: 100%;
+    padding: 8px 8px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid rgba(164, 38, 119, 1);
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all 0.3 ease-out;
+    border-radius: 0;
+  }
+  
+  &__Form__item input:focus {
+    border-bottom: 2px solid #e27676;
+  }
+  &__Form__item label{
+    color: #ffffff;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    margin-top:13px ;
+    transition: all .3s ease-out;
+  }
+  &__Form__item input:focus + label, .label-cadastro input:valid + label{
+    font-size: 16px;
+    margin-top: 0;
+    color: whitesmoke;
+  }
+}
